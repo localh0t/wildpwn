@@ -108,14 +108,3 @@ rm -rf .cachefile.c
 ``` 
 
 > Feel free to change them!
-
-<br>
-
-# Download
-
-### [Get it here!]
-
-Critics / suggestions / changes are welcome!
-
-[this excellent paper]:https://www.exploit-db.com/papers/33930/
-[Get it here!]:https://www.github.com/localh0t/wildpwn/
