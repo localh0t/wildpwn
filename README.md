@@ -1,6 +1,8 @@
 # First things first!
 Read: https://www.exploit-db.com/papers/33930/
 
+<br />
+
 # Basic usage
 
 It goes something like this:
@@ -19,7 +21,8 @@ optional arguments:
   --file FILE  Path to file for taking ownership / change permissions. Use it
                with combined attack only.
 ```
-<br>
+
+<br />
 
 ## Payload types
 
@@ -59,7 +62,8 @@ $ ls -lha ./pwn_me/
 $ ls -lha /tmp/very_secret_file
 -rwxrwxrwx 1 root root 2048 jun 28 21:38 /tmp/very_secret_file
 ```
-<br>
+
+<br />
 
 ## Bash scripts used on tar/rsync attacks
 
