@@ -29,7 +29,8 @@ optional arguments:
   - **combined:** Uses the chown & chmod file reference tricks, described in section 4.1 and 4.2, combined in a single payload.
   - **tar:** Uses the Tar arbitrary command execution trick, described in section 4.3.
   - **rsync:** Uses the Rsync arbitrary command execution trick, described in section 4.4.
-<br>
+
+<br />
 
 ## Usage example
 ``` bash
