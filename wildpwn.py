@@ -3,8 +3,7 @@
 # wildpwn v0.1.1
 # Tool to generate unix wildcard attacks
 # Based on this paper: https://www.exploit-db.com/papers/33930/
-# Follow: @mattdch
-# localh0t.github.io
+# Follow (Medium / Twitter): @localh0t
 
 # Import modules
 import argparse, base64, os, sys
